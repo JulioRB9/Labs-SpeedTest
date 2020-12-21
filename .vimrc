@@ -22,7 +22,7 @@ call plug#begin('~/.vim/plugged')
 " Plug 'morhetz/gruvbox'
 " IDE
 Plug 'easymotion/vim-easymotion'
-Plug 'scrooleese/nerdtree'
+Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
