@@ -1,3 +1,6 @@
+" Instalar lo complementos
+" https://github.com/junegunn/vim-plug
+
 set number
 set mouse=a
 set numberwidth=1
