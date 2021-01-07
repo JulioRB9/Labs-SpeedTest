@@ -1,6 +1,10 @@
 "--------------------------------------------------------------------------
 "===========	PLUGIN FOR VIM && NOEVIM	==========================
 
+" Lineas verticales o de guia
+" https://github.com/Yggdroot/indentLine
+
+
 " Busacar en google -- plug vim --
 " Instalar complemento 
 " https://github.com/junegunn/vim-plug

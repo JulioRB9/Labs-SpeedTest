@@ -34,6 +34,10 @@ call plug#end()
 
 let g:airline_theme = "github"
 let g:lightline = { 'colorscheme': 'github' }
+"let g:indentLine_char = '┊'
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+let g:indentLine_color_tty_light = 7 " (default: 4)
+let g:indentLine_color_dark = 1 " (default: 2)
 " -------------------------------------------------------------------------
 " ================== colorscheme gruvbox =================================
 let g:gruvbox_contrast_dark = "hard"
@@ -42,7 +46,6 @@ let mapleader=" "
 let g:python_highlight_all = 1
 
 " ------------------------------------------------------------------------
-"let g:coc_disable_startup_warning = 1
 " ================ SETTING  KITE   =====================
 " https://github.com/kiteco/vim-plugin
 
@@ -81,12 +84,4 @@ if &filetype == "javascript" || &filetype == "python"
   inoremap <c-space> <C-x><C-u>
 else
   inoremap <silent><expr> <c-space> coc#refresh()
-endif
-
-
-
-
-
-
-
-
+endif 
