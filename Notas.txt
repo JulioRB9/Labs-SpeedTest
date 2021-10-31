@@ -1,0 +1,24 @@
+-------------------------------------------------------
+01- Crear un entorno Virtual
+    $ mkvirtualenv -p  /usr/bin/python3.* EV01
+
+02- Listar todos los entornos Virtuales 
+    $ lsvirtualenv 
+
+03- Activar Entorno Virtual
+    $ workon k36
+
+04- Desactivar Entorno Virtual
+    $ deactive
+
+05- Eliminar Entorno virtual
+    $ rmvirtualenv ENVNAME
+-------------------------------------------------------
+01- Arrancar el servidor
+    python manage.py runserver
+
+02- Crear App
+    python manage.py startapp polls
+
+03- Crear una cuenta SuperUsario
+    manage.py createsusperuser

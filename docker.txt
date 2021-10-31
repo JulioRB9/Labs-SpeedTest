@@ -1,0 +1,19 @@
+01 - Instalar Docker en Ubuntu 
+  https://get.docker.com/
+
+02 - Verificar Docker
+     $ docker info
+     $ docker -version
+
+03 - Ver contenedor que se esta ejecutando actualmente
+     $ docker ps
+     $ docker ps -a
+     $ docker images
+
+04 - Ver Correr contener para cer directorio de contenedor
+     $ docker run ubuntu ls
+
+05 - Ejecutar bash
+     $ docker run -i -t ubuntu  bash
+
+
