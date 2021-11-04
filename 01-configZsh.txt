@@ -1,0 +1,9 @@
+Este archivo describe paso a paso las configuracione de shell bash Zsh por lo que seguiremos unos paso sencillo
+
+01 - Instalar shell bash 
+      $ sudo apt-get instalar zsh
+
+02 - Crear un respaldo del archivo que fue creado en el muestros equipos  en el directorio raiz ~/.zshrc
+      $ cp ~/.zshrc ~/.zshrc.orig
+
+03 - 
