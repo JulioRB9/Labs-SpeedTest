@@ -1,3 +1,3 @@
-# vim-config
-Archivo solo de intruciones de prueba
+# File Setting
+Archivo de ayuda Creado para ayuda, no sirve de nada si quieres revisarlo
 
