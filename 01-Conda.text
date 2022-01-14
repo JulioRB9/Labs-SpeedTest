@@ -1,4 +1,5 @@
 =========USO BASICO DE CONDA====================
+https://conda.io/projects/conda/en/latest/user-guide/index.html
 
 01 - Verificar la instalacion 
   $ conda --version
