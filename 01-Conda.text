@@ -1,0 +1,24 @@
+=========USO BASICO DE CONDA====================
+
+01 - Verificar la instalacion 
+  $ conda --version
+
+02 - Actualizar conda
+  $ conda update conda
+
+03 - Cree un nuevo entorno e instale un paquete en él
+  $ conda create --name EntornoVirtual
+
+04 - Para usar, o "activar" el nuevo entorno,
+  $ conda activate EntornoVirtual
+
+05 - Para ver una lista de todos sus entornos
+  $ conda info --envs
+
+06 - Administrar paquetes - Instale este paquete en el entorno actual:
+  $ conda install paquete
+
+07 - Compruebe si el programa recién instalado se encuentra en este entorno:
+  $ 
+
+
