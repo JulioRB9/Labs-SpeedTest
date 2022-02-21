@@ -1,0 +1,9 @@
+Extenciones de Node
+01 - .run
+02 - EsLint
+03 - javaScript(ES6) code snippets
+04 - Prettier - Code Formater
+05 - Relative Path
+06 - Bracket Pair Colorizer
+07 - Indent-rainbow
+

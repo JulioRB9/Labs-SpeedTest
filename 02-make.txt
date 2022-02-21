@@ -1,0 +1,20 @@
+Este archivo solo es de apoyo para consultar la compilacion de archivo make
+
+CONTRUIR PAQUETE MAKE
+
+01  -  Antes de contruir un paquete tenemos que estar seguro de la ruta donde nos encontramos
+  $ mkdir Step1_build
+
+02  -  Construir un archivos de compilacion para el sistema acedemo en el directorio 
+  $ cd Step1_build
+  $ cmake setupo nombredel archivo.txt
+
+03  -  Luego llame a ese sistema de compilación para compilar/vincular el proyecto:
+
+  $ cmake --build .
+
+
+
+
+
+
