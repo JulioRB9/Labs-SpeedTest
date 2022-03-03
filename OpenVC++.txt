@@ -1,0 +1,25 @@
+01 - Configurar OpenCV en linux creando un entorno virtual
+ $ sudo apt-get install  python3-pip	
+
+02 . Crear el ambiente virtual
+
+	$mkvirtualenv -p  /usr/bin/python3.6 k36
+
+03 - Setting  up  Environment  for  OpenVC
+     - Using, we  can  express  imagen  as  multidimesional 	 arrays
+     - Using  NumPy's built-in high-level  mathematical  fuctional, we  can  quickly  and
+       easily  performs  numerical  analisis on  an imgen 
+
+	$ pip  install numpy
+
+04 - Install Matplotlib
+	- Matplotlib  is  a plotting  libray
+	- Can  be  used  for  plotting  image  histograma  or  viewing the  image  itself,
+	  matplotlib  is a  great  tool to have
+	
+	$ pip install  matplotlib
+
+05 - Install SciPy
+	- SciPy  adds further support  for scientific  and  technical  computing
+	
+	$ pip install scipy	
