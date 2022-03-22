@@ -1,4 +1,13 @@
 -------------------------------------------------------
+PASOS PARA INSTALAR Y CREAR ENTORNO VITUALES PARA PYTHON
+
+$ sudo pip install --upgrade pip virtualenv
+$ sudo pip install virtualenvwrapper
+  nvim .bashrc
+	export WORKON_HOME=~/.virtualenvs
+	source /usr/local/bin/virtualenvwrapper.sh
+
+
 01- Crear un entorno Virtual
     $ mkvirtualenv -p  /usr/bin/python3.* EV01
 
