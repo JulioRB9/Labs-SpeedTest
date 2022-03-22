@@ -25,8 +25,8 @@ $ sudo pip install virtualenvwrapper
   nvim .bashrc
   #Virtualenvwrapper settings:
     export WORKON_HOME=$HOME/.virtualenvs
-	export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-	source /usr/local/bin/virtualenvwrapper.sh
+    export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+    source /usr/local/bin/virtualenvwrapper.sh
 
 
 01- Crear un entorno Virtual
@@ -43,6 +43,7 @@ $ sudo pip install virtualenvwrapper
 
 05- Eliminar Entorno virtual
     $ rmvirtualenv ENVNAME
+
 -------------------------------------------------------
 01- Arrancar el servidor
     python manage.py runserver
