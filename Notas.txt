@@ -53,3 +53,10 @@ $ sudo pip install virtualenvwrapper
 
 03- Crear una cuenta SuperUsario
     manage.py createsusperuser
+
+
+------------------------------------------------------
+
+CAMBIAR LA TERMINAL PREDETERMINADO A OTRA 
+    $sudo update-alternatives --config x-terminal-emulator
+
