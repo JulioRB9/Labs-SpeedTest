@@ -12,6 +12,7 @@ set sw=2
 set relativenumber
 set laststatus=2
 set noshowmode
+set termguicolors
 
 call plug#begin('~/.vim/plugged')
  
