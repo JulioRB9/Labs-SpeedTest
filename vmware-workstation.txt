@@ -1,0 +1,16 @@
+Solucion a la instalacion de la maquina virtual con vmware-workstation
+
+Ejecutar estos comando en la terminal de 
+linux, con esto solucionaremos el error.
+
+ sudo apt-get install build-essential
+ 
+ sudo apt-get install linux-headers-$(uname -r)
+ 
+ sudo apt-get install gcc perl bzip2 dkms make
+ 
+ chmod +x Vmware….
+ 
+ sudo ./Vmware…..
+ 
+ sudo vmware-installer -u vmware-workstation
