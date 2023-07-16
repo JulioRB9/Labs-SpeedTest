@@ -14,3 +14,7 @@ linux, con esto solucionaremos el error.
  sudo ./Vmware…..
  
  sudo vmware-installer -u vmware-workstation
+
+
+ Reiniciar el equipo despues de ejecuta los comandos, para que realice el efecto preconfiguracion al sistema.
+
