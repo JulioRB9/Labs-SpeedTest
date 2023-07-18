@@ -1,24 +1,11 @@
 -------------------------------------------------------
 PASOS PARA INSTALAR Y CREAR ENTORNO VITUALES PARA PYTHON
 
-https://kivy.org/doc/stable/installation/installation-linux.html?highlight=pip
+$ sudo apt-get update
+
 $ sudo apt-get install -y \
-    python \
     python3-pip \
-    build-essential \
-    git \
-    python3-pip \
-    python-dev \
-    python3-dev \
-    libsdl2-dev \
-    libsdl2-image-dev \
-    libsdl2-mixer-dev \
-    libsdl2-ttf-dev \
-    libportmidi-dev \
-    libswscale-dev \
-    libavformat-dev \
-    libavcodec-dev \
-    zlib1g-dev \
+    python3
 
 $ sudo pip3 install --upgrade pip setuptools
 $ sudo pip install virtualenvwrapper
