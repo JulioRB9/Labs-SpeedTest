@@ -1,4 +1,37 @@
+
+
+
+
 Solucion a la instalacion de la maquina virtual con vmware-workstation
+
+
+The instructions provided are as follows:
+
+1. Generate a new key with OpenSSL:
+
+jacob@desktop:~$ openssl req -new -x509 -newkey rsa:2048 -keyout VMWare.priv -outform DER -out VMWare.der -nodes -days 36500 -subj "/CN=VMware/"
+2. Sign the modules with the new key:
+
+$ sudo /usr/src/linux-headers-`uname -r`/scripts/sign-file sha256 ./VMWare.priv ./VMWare.der $(modinfo -n vmmon)
+$ sudo /usr/src/linux-headers-`uname -r`/scripts/sign-file sha256 ./VMWare.priv ./VMWare.der $(modinfo -n vmnet)
+3. Import the public key to the system's MOK list:
+
+$ sudo mokutil --import MOK.der
+You will be asked to enter a password, which you must use when applying the key in your BIOS.
+
+4. Reboot the system, and apply the key.
+
+Note. On my Lenovo laptop, I was automatically prompted to install the new key doing boot. I am not sure if that will be the case for other systems, but you should be able to apply the key from some place within the BIOS.
+
+I tested this with Ubuntu 21.10 (Impish Indri), but it should work with older versions as well.
+
+After updating the problem reemerges.
+Unfortunately, it looks like we have to repeat this process whenever VMWare is updated.
+
+I tried re-using the same key, but the system would not let me, saying that the key was already enrolled, so I generated a new key by overwriting the old files.
+
+This situation is bad because a lot of users will not know what to do. Hopefully there will be an easier fix in the future.
+
 
 Ejecutar estos comando en la terminal de 
 linux, con esto solucionaremos el error.
