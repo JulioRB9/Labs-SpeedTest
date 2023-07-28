@@ -59,3 +59,58 @@ INSERT INTO Citas( Fecha, Hora, ClienteID) VALUES
 SELECT * FROM Clientes;
 SELECT * FROM Servicios;
 SELECT * FROM Citas;
+
+-- Unio de dos tablas
+SELECT * FROM Citas
+INNER JOIN Clientes ON Clientes.ID = Citas.ClienteID;
+
+-- LEFT
+SELECT * FROM Citas
+LEFT JOIN Clientes ON Clientes.ID = Citas.ClienteID;
+
+-- RIGHT
+SELECT * FROM Citas
+RIGHT JOIN Clientes ON Clientes.ID = Citas.ClienteID;
+
+-- Tabla PIVOTE
+CREATE TABLE CitasServicios(
+ID INT(11) AUTO_INCREMENT,
+CitaID INT(11) NOT NULL,
+ServiciosID INT(11) NOT NULL,
+PRIMARY KEY (ID),
+ KEY CitaID (citaID),
+ CONSTRAINT Cita_FK
+ FOREIGN KEY (CitaID)
+ REFERENCES Citas (ID),
+ 
+ KEY ServiciosID(ServiciosID),
+ CONSTRAINT Servicios_FK
+ FOREIGN KEY (ServiciosID)
+ REFERENCES Servicios (ID)
+ );
+ 
+ SHOW TABLES;
+ SELECT * FROM Citas;
+ SELECT * FROM CitasServicios;
+ SELECT * FROM Clientes;
+ SELECT * FROM Servicios;
+ 
+ DESCRIBE CitasServicios;
+ DESCRIBE Servicios;
+
+--  Insertando datos en CitasServicios
+ INSERT INTO CitasServicios (CitaID, ServiciosID) VALUES (2, 8);
+ INSERT INTO CitasServicios (CitaID, ServiciosID) VALUES (2, 3);
+ INSERT INTO CitasServicios (CitaID, ServiciosID) VALUES (2, 4);
+ 
+ -- Unios de tablas Pivotes
+SELECT * FROM CitasServicios
+LEFT JOIN Citas ON Citas.ID = CitasServicios.CitaID
+LEFT JOIN Servicios ON Servicios.ID = CitasServicios.ServiciosID;
+
+
+-- Multiples uniones de tablas con JOIN
+SELECT * FROM CitasServicios
+LEFT JOIN Citas ON Citas.ID = CitasServicios.CitasID
+LEFT JOIN Clientes ON Citas.ClientesID = Clientes.ID
+LEFT JOIN Servicios ON Servicios.ID = CitasServicios.ServiciosID;
