@@ -41,7 +41,6 @@ $ sudo pip install virtualenvwrapper
 03- Crear una cuenta SuperUsario
     manage.py createsusperuser
 
-
 ------------------------------------------------------
 01 -Crear App dentro de un subdirectorio de Django
       admin-django startproject TiendaOnline
@@ -50,8 +49,26 @@ $ sudo pip install virtualenvwrapper
     pythonn manage.py startapp GestionPedidos
 
 02 -Verificar la app del proyecto en Django
+    python manage.py check GestionPedidos
 
-     python manage.py check GestionPedidos
+03 -Migracion de datos a la tabla de SQL
+    python manage.py sqlmigrate GestionPedidos 0001
+
+04 -Generar la tabla con el siguiente codigo
+    python manage.py migrate
+
+-------------------------------------------------------
+
+01 - Crear base de datos
+    python manage.py makemigrations 
+
+
+
+
+
+
+
+
 
 CAMBIAR LA TERMINAL PREDETERMINADO A OTRA 
     $sudo update-alternatives --config x-terminal-emulator
