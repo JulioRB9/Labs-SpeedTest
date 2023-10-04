@@ -43,6 +43,15 @@ $ sudo pip install virtualenvwrapper
 
 
 ------------------------------------------------------
+01 -Crear App dentro de un subdirectorio de Django
+      admin-django startproject TiendaOnline
+
+02 -Crear el modulo de GestionPedidos
+    pythonn manage.py startapp GestionPedidos
+
+02 -Verificar la app del proyecto en Django
+
+     python manage.py check GestionPedidos
 
 CAMBIAR LA TERMINAL PREDETERMINADO A OTRA 
     $sudo update-alternatives --config x-terminal-emulator
