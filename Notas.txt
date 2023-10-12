@@ -57,7 +57,39 @@ $ sudo pip install virtualenvwrapper
 04 -Generar la tabla con el siguiente codigo
     python manage.py migrate
 
+-------------------------------------------------------------
+FORMA UNO
+insertar datos en nuetra base de datos
+>>> art2=Articulo(nombre='Termo seramica',seccion='Termos',precio=200)
+>>> art2.save()
+>>>
+
 -------------------------------------------------------
+FORMA DOS
+>>> art3=Articulo.objects.create(nombre='Sin 502', seccion='Bolsas', precio=45)
+
+---------------------------------------------------------------
+ACTUALIZAR datos
+>>> art2.precio=100
+>>> art2.save()
+
+-----------------------------------------------------------
+ELIMINAR datos
+>>> art5=Articulo.objects.get(id=1)
+>>> art5.delete()
+(1, {'GestionPedidos.Articulo': 1})
+>>> art5.delete()
+
+-------------------------------------------------------------------------------------
+MOSTRAR LOS DATOS DE NUETRO MODELO
+
+>>> lista=Articulo.objects.all()
+>>> lista
+<QuerySet [<Articulo: Articulo object (2)>, <Articulo: Articulo object (3)>]>
+>>> lista.query.__str__()
+'SELECT "GestionPedidos_articulo"."id", "GestionPedidos_articulo"."nombre", "GestionPedidos_articulo"."seccion", "GestionPedidos_articulo"."precio" FROM "GestionPedidos_articulo"'
+
+-----------------------------------------------------------------------------------------------------------
 
 01 - Crear base de datos
     python manage.py makemigrations 

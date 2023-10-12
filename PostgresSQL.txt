@@ -1,0 +1,14 @@
+Paso de instalacion postgreSQL
+
+01 - Ver el status del gestor de PostgresSQL
+  $ apt list --installed | grep postgres
+
+02 -  Desistalar PostgresSQL por completo
+  $ sudo apt autoremove --purge postgresql*
+
+03 - Remover todos lo directorios que fue creado por el gestor a la hora de instalarlo
+   $ sudo rm -rf /var/lib/postgresql/
+   $ sudo rm -rf /var/log/postgresql/
+   $ sudo rm -rf /etc/postgresql/
+
+04 - https://www.pgadmin.org/download/pgadmin-4-apt/
