@@ -38,7 +38,8 @@ $ sudo pip install virtualenvwrapper
 02- Crear App
     python manage.py startapp polls
 
-03- Crear una cuenta SuperUsario
+-------------------------------------------------------
+01- Crear una cuenta SuperUsario para el panel de administrador
     manage.py createsusperuser
 
 ------------------------------------------------------
