@@ -26,7 +26,7 @@ $ sudo pip install virtualenvwrapper
     $ workon k36
 
 04- Desactivar Entorno Virtual
-    $ deactive
+    $ deactivate
 
 05- Eliminar Entorno virtual
     $ rmvirtualenv ENVNAME
