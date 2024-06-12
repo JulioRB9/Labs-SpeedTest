@@ -32,6 +32,8 @@ $ sudo pip install virtualenvwrapper
     $ rmvirtualenv ENVNAME
 
 -------------------------------------------------------
+00 -  Instalar las dependencias exclusivo
+    $ pip install -r requirements.txt
 01- Arrancar el servidor
     python manage.py runserver
 
