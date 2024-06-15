@@ -14,3 +14,4 @@ Paso de instalacion postgreSQL
 04 - https://www.pgadmin.org/download/pgadmin-4-apt/
 
 http://support.ptc.com/help/thingworx_hc/thingworx_8_hc/es/index.html#page/ThingWorx/Help/Installation/Installation/install_and_configure_postgresql_Ubuntu.html
+sudo -u postgres psql -c "ALTER ROLE postgres WITH password 'iseatosql'"
