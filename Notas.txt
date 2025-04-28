@@ -30,7 +30,11 @@ $ sudo pip install virtualenvwrapper
 
 05- Eliminar Entorno virtual
     $ rmvirtualenv ENVNAME
+-------------------------------------------------------
 
+OPCION PARA CREAR ENTORNO VIRTUAL
+
+$ source EntVenv/bin/activate
 -------------------------------------------------------
 00 -  Instalar las dependencias exclusivo
     $ pip install -r requirements.txt
